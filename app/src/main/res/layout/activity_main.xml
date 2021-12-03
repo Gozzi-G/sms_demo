@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Read Sms"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvSms"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:listitem="@layout/item_sms"/>
+
+    <!-- <ScrollView
+         android:layout_width="match_parent"
+         android:layout_height="match_parent">
+
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:orientation="vertical">
+
+             <EditText
+                 android:id="@+id/editTextTextPersonName1"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:ems="10"
+                 android:inputType="textPersonName" />
+
+             <EditText
+                 android:id="@+id/editTextTextPersonName2"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:ems="10"
+                 android:inputType="textPersonName" />
+
+             <EditText
+                 android:id="@+id/editTextTextPersonName3"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:ems="10"
+                 android:inputType="textPersonName" />
+
+             <EditText
+                 android:id="@+id/editTextTextPersonName4"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:ems="10"
+                 android:inputType="textPersonName"
+                 tools:layout_editor_absoluteX="16dp"
+                 tools:layout_editor_absoluteY="130dp" />
+
+             <EditText
+                 android:id="@+id/editTextTextPersonName5"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:ems="10"
+                 android:inputType="textPersonName"
+                 tools:layout_editor_absoluteX="17dp"
+                 tools:layout_editor_absoluteY="186dp" />
+
+             <EditText
+                 android:id="@+id/editTextTextPersonName6"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:ems="10"
+                 android:inputType="textPersonName"
+                 tools:layout_editor_absoluteX="18dp"
+                 tools:layout_editor_absoluteY="238dp" />
+
+             <EditText
+                 android:id="@+id/editTextTextPersonName7"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:ems="10"
+                 android:inputType="textPersonName"
+                 tools:layout_editor_absoluteX="18dp"
+                 tools:layout_editor_absoluteY="297dp" />
+
+             <EditText
+                 android:id="@+id/editTextTextPersonName8"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:ems="10"
+                 android:inputType="textPersonName"
+                 tools:layout_editor_absoluteX="19dp"
+                 tools:layout_editor_absoluteY="354dp" />
+
+             <EditText
+                 android:id="@+id/editTextTextPersonName9"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:ems="10"
+                 android:inputType="textPersonName"
+                 tools:layout_editor_absoluteX="20dp"
+                 tools:layout_editor_absoluteY="419dp" />
+
+             <EditText
+                 android:id="@+id/editTextTextPersonName10"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:ems="10"
+                 android:inputType="textPersonName"
+                 tools:layout_editor_absoluteX="20dp"
+                 tools:layout_editor_absoluteY="472dp" />
+
+             <EditText
+                 android:id="@+id/editTextTextPersonName11"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:ems="10"
+                 android:inputType="textPersonName"
+                 tools:layout_editor_absoluteX="23dp"
+                 tools:layout_editor_absoluteY="526dp" />
+
+             <EditText
+                 android:id="@+id/editTextTextPersonName12"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:ems="10"
+                 android:inputType="textPersonName"
+                 tools:layout_editor_absoluteX="23dp"
+                 tools:layout_editor_absoluteY="577dp" />
+
+             <EditText
+                 android:id="@+id/editTextTextPersonName13"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:ems="10"
+                 android:inputType="textPersonName"
+                 tools:layout_editor_absoluteX="23dp"
+                 tools:layout_editor_absoluteY="577dp" />
+
+             <EditText
+                 android:id="@+id/editTextTextPersonName14"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:ems="10"
+                 android:inputType="textPersonName"
+                 tools:layout_editor_absoluteX="23dp"
+                 tools:layout_editor_absoluteY="577dp" />
+
+             <EditText
+                 android:id="@+id/editTextTextPersonName15"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:ems="10"
+                 android:inputType="textPersonName"
+                 tools:layout_editor_absoluteX="23dp"
+                 tools:layout_editor_absoluteY="577dp" />
+
+         </LinearLayout>
+
+
+
+     </ScrollView>-->
+
+
+</LinearLayout>
